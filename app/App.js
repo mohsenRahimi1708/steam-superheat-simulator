@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, Alert, StyleSheet, ScrollView } from 'react-native';
 
 // 🔴 تغییر این URL بعد از استقرار سرور!
-const SERVER_URL = 'https://your-steam-api.onrender.com'; // موقتاً برای تست در Codespaces: 'http://localhost:8080'
+const SERVER_URL = const SERVER_URL = 'https://your-steam-api.onrender.com'; // موقتاً برای تست در Codespaces: 'http://localhost:8080'
 
 export default function App() {
   const [result, setResult] = useState(null);

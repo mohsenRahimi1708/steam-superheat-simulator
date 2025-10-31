@@ -1,8 +1,10 @@
 # server/app.py
 from flask import Flask, jsonify, request
 from pyXSteam.XSteam import XSteam
+from flask_cors import CORS  # ← اضافه شد
 
 app = Flask(__name__)
+CORS(app)  # ← فعال‌سازی CORS برای همه درخواست‌ها
 steam = XSteam(XSteam.UNIT_SYSTEM_MKS)  # m/kg/s/K/bar/kJ
 
 @app.route('/superheat', methods=['GET'])
