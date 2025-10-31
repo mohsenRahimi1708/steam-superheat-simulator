@@ -1,6 +1,6 @@
 # server/app.py
 from flask import Flask, jsonify, request
-from PYXSteam import XSteam
+from pyXSteam.XSteam import XSteam
 
 app = Flask(__name__)
 steam = XSteam(XSteam.UNIT_SYSTEM_MKS)  # m/kg/s/K/bar/kJ
