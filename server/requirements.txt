@@ -1,2 +1,2 @@
-PYXSteam==1.1.1
+PYXSteam==0.4.10
 Flask==3.0.3
